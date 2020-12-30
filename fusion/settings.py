@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
+
 import os
 
 import dj_database_url
@@ -145,7 +146,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 """
 # Email produção
-
 EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = 'no-reply@fusion.com.br
 EMAIL_PORT = 587
@@ -157,6 +157,3 @@ DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 
 LOGOUT_REDIRECT_URL = 'index'
 
-import django_heroku
-
-django_heroku.settings(locals())
