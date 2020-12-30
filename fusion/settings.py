@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
-import django_heroku
-
 import os
 
 import dj_database_url
@@ -97,6 +95,7 @@ DATABASES = {
 DATABASES = {
     'default' : dj_database_url.config()
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -153,6 +152,9 @@ EMAIL_HOST_PASSWORD = 'fusion'
 DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 """
 
-django_heroku.settings(locals())
 
 LOGOUT_REDIRECT_URL = 'index'
+
+import django_heroku
+
+django_heroku.settings(locals())
