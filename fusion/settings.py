@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
+import django_heroku
+
 import os
 
 import dj_database_url
@@ -150,5 +152,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = 'fusion'
 DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 """
+
+django_heroku.settings(locals())
 
 LOGOUT_REDIRECT_URL = 'index'
