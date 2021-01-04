@@ -1,1 +1,1 @@
-web: gunicorn fusion-jrtv.wsgi --log-file -
+web: gunicorn fusion-jrtv.wsgi
