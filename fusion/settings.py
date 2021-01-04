@@ -17,8 +17,6 @@ import os
 
 import dj_database_url
 
-import django_heroku
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ')ucq14wcc-y32ojwdf3q&ca*98hvxed(a+!cl=pes61bvkcq^5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -159,4 +157,3 @@ DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 LOGOUT_REDIRECT_URL = 'index'
 
 
-django_heroku.settings(locals())
