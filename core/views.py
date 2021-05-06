@@ -14,9 +14,9 @@ class IndexViews(FormView):
     def get_context_data(self, **kwargs):
         context = super(IndexViews, self).get_context_data(**kwargs)
         context['servicos'] = Servico.objects.order_by('?').all()
-        context['funcionario'] = Funcionario.objects.order_by('?').all()
+        context['funcionarios'] = Funcionario.objects.order_by('?').all()
         context['feature1'] = Feature.objects.all()[:3]
-        context['feature2'] = Feature.objects.all()[3:6]
+        context['feature2'] = Feature.objects.all()[3:7]
         return context
 
 

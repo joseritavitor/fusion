@@ -26,5 +26,4 @@ class ContatoForm(forms.Form):
             to=['contato@fusion.com.br',],
             headers={'Reply-To': email}
         )
-
         mail.send()
